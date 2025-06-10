@@ -32,10 +32,11 @@ these will populate the associated ticket classes.
 ![MigrationTool](images/MigrationTool.png)
 
 The MigrationTool class contains the overall migration logic. Here mapping between issues from the different systems takes place.
-A typilca work flow as as follows:
 
-1. Read all issues from the Jira instance
-2. Convert each to Azure work item, and push to azure
+A typical work flow as as follows:
+
+1. Read all issues from a Jira instance
+2. Convert each to Azure work item, and push to Azure
 
 In code:
 
@@ -57,5 +58,5 @@ for (JiraIssue jiraIssue : jiraIssues) {
 ## Extension
 
 The system was created for migrating from YouTrack and Jira to Azure DevOps. It can easily be tuned to migrate the other way.
-Following the same architectual pattern it can also easily be extended to other systems as long as they provide a REST API for
-communication.
+Following the same architectual pattern it can also easily be extended to include other systems as long as they provide a
+REST API for communication.
