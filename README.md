@@ -9,15 +9,17 @@ Migrating between ticket systems is non-trivial.
 These systems are incompatible in all possible ways.
 It needs to be done in stages in order to preserve item links, and Git history must be rewritten to update commit messages with new ticket numbers.
 Among others.
+
 Apart from the pure ticket content, one also want to preserve rich-text, attachments, comments, reactions, wiki links, user IDs and so on.
 What complicates matters: Most fields in a  ticket system are custom with custom value sets, which require detailed mapping from source to destination.
+
 There are commersial tools for supporting this operation, but applying this will most certainly be both costly,
 time-consuming, painful and suboptimal knowing the massive amount of custom logic required.
 And they will anyway not take the associated Git store into consideration.
-By control the logic yourself you kept full control over the process and could tailor it to your exact needs.
 
-GeoSoft ticketmaster contains all the basic components needed for migrating between these systems.
-Due to custom fields it must be tailor-made to each specific case, but this is relatively trivial.
+By controling the logic yourself you keep full control over the process and can tailor it to your exact needs.
+
+GeoSoft **ticketmaster** contains all the basic components needed for migrating between these systems.
 
 Use this code as you starting point for a migration. Or contact [GeoSoft](https://geosoft.no) and we will handle it for you.
 
