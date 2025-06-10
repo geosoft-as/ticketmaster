@@ -476,8 +476,7 @@ public final class Jira
   public static void main(String[] arguments)
   {
     Jira jira = new Jira();
-    //jira.listFields();
-
-    JiraIssue issue = jira.pullIssue("SK-10630");
+    JiraIssue issue = jira.pullIssue("SC-1267");
+    System.out.println(issue);
   }
 }

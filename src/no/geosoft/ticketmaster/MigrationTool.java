@@ -1045,18 +1045,17 @@ public final class MigrationTool
   }
 
   /**
-   * Main program for migration from Jira/YouTRrack to Azure.
+   * Main program for migration from Jira/YouTrack to Azure.
    *
    * @param arguments  Application arguments. Not used.
    */
   public static void main(String[] arguments)
   {
     MigrationTool migrationTool = new MigrationTool();
-    //migrationTool.destroyAllWorkItems();
-    //migrationTool.loadExistingWorkItems();
+    migrationTool.destroyAllWorkItems();
+    migrationTool.loadExistingWorkItems();
 
-    //migrationTool.processYouTrackIssues();
-    migrationTool.processYouTrackBusinessCaseIssues();
-    //migrationTool.processJiraIssues();
+    migrationTool.processYouTrackIssues();
+    migrationTool.processJiraIssues();
   }
 }
